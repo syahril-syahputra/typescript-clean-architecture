@@ -6,7 +6,6 @@ class fakestore {
     public async get(): Promise<Item[]> {
 
         const data: Item[] = []
-
         data.push(new Item("xxx-xxx-xxx", "bootler", 12, new GroupItems("xxx-xxx", "Peralatan")))
         data.push(new Item("xxx-xxx-xxx", "Bootle", 12, new GroupItems("xxx-xxx", "Peralatan")))
         data.push(new Item("xxx-xxx-xxx", "Bootle", 12, new GroupItems("xxx-xxx", "Peralatan")))
@@ -15,10 +14,7 @@ class fakestore {
         data.push(new Item("xxx-xxx-xxx", "Bootle", 12, new GroupItems("xxx-xxx", "Peralatan")))
         data.push(new Item("xxx-xxx-xxx", "Bootle", 12, new GroupItems("xxx-xxx", "Peralatan")))
         data.push(new Item("xxx-xxx-xxx", "Bootle", 12, new GroupItems("xxx-xxx", "Peralatan")))
-
         return data
-
-
     }
 
     public async update(item: Item): Promise<Item> {
