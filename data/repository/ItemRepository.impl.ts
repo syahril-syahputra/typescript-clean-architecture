@@ -1,9 +1,12 @@
+import ItemRepository from "../../domain/repository/ItemRepository";
 import fakestore from "../datasource/fakestore/item";
 import Item from "../models/Item";
 
-class ItemRepositoryImpl {
+class ItemRepositoryImpl implements ItemRepository{
 
-    public async getAll(): Promise<Item[]> {
+
+
+    public async get(): Promise<Item[]> {
         const fakeStore = new fakestore()
         return await fakeStore.get()
     }

@@ -1,6 +1,11 @@
 {
+    "scripts": {
+        "test": "vitest",
+        "coverage": "vitest run --coverage"
+    },
     "devDependencies": {
-        "ts-node-dev": "^2.0.0"
+        "ts-node-dev": "^2.0.0",
+        "vitest": "^0.16.0"
     },
     "dependencies": {
         "@types/node-fetch": "^2.6.2",
