@@ -43,6 +43,7 @@ namespace testing {
     }
 
     //kelebihan inversion kalau itu printer2 kita ganti ganti jadi aman
-    const a = new service(new printer2);
+    const printers2 = new printer2();
+    const a = new service(printers2);
     a.coba2();
 }
